@@ -1,0 +1,76 @@
+##
+## исключаем всегда
+##
+
+# ОС
+__MACOSX/
+.DS_Store
+Thumbs.db
+/cgi-bin
+
+# ненужные файлы
+*.gz
+*.tar
+*.zip
+*.rar
+*.bat
+*.dat
+*.dt
+*.pdf
+*.psd
+*.flv
+*.xlsx
+*.xls
+*.csv
+*.docx
+*.doc
+*.phar
+*.mmdb
+*.txt
+!robots.txt
+
+# настройки IDE
+/.idea/
+/nbproject/
+
+# библиотеки и зависимости
+bower_components
+node_modules
+vendor
+*.lock
+.sass-cache
+
+# логи
+/log/
+/logs/
+*.log
+
+# ядро
+/bitrix/*
+/upload/
+
+##
+## шаблоны
+##
+
+# если нужно зафиксировать свои компоненты (модули по аналогии)
+!/bitrix/components/
+/bitrix/components/*
+!/bitrix/components/axi
+
+# php_interface
+!/bitrix/php_interface/
+/bitrix/php_interface/*
+!/bitrix/php_interface/include/
+!/bitrix/php_interface/init.php
+
+# шаблоны
+!/bitrix/templates/
+/bitrix/templates/*
+!/bitrix/templates/axi
+
+##
+## свой проект с системой сборки - исключаем папку в которую собираются стили и скрипты
+##
+
+/local/**/assets
